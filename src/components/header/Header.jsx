@@ -13,6 +13,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { changeLanguageAction } from "../../Redux/Action/LanguageAction";
+import { useDispatch } from "react-redux";
 
 const pages = [
   { name: "Home", path: "/" },
@@ -40,7 +42,7 @@ const Header = (as) => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
+  const dispatch=useDispatch()
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -117,6 +119,20 @@ const Header = (as) => {
                 {page.name}
               </Button>
             ))}
+                 <button
+                // component="Button"
+                onClick={()=>dispatch(changeLanguageAction("RU"))}
+                // sx={{ my: 2, color: "white", display: "block" }}
+              >
+                RU
+              </button>
+              <button
+                // component="Button"
+                onClick={()=>dispatch(changeLanguageAction("AZ"))}
+                // sx={{ my: 2, color: "white", display: "block" }}
+              >
+                AZ
+              </button>
           </Box>
           <Box mx={5} sx={{ flexGrow: 0,}}>
             <Link to={"/cart"}>
