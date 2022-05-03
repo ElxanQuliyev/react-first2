@@ -1,0 +1,33 @@
+.my-modal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  background: #80808085;
+  transition: 0.4s ease-in-out;
+  &.active-modal {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+  .modal-inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    min-height: 450px;
+    background: orange;
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0;
+    visibility: hidden;
+    &.active-modal {
+        opacity: 1;
+        visibility: visible;
+      }
+  }
