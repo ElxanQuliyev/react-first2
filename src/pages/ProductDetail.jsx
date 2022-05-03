@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { BASE_URL } from "../api/BaseConfig";
 import ProductSpec from "../components/product-specification/ProductSpec";
 import { addToCart } from "../Redux/Action/CartAction";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetail = () => {

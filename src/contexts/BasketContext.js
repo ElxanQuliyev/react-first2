@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { BASE_URL } from "../api/BaseConfig";
 
 const BasketContext=createContext();

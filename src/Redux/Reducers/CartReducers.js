@@ -1,7 +1,8 @@
+import { ADDTOCART } from "../Constants/CartConstants";
 
 export const cartReducers=(state={cartItems:[]},action)=>{
     switch (action.type) {
-        case "ADD_TO_CART":
+        case ADDTOCART:
                 const item=action.payload;
                 const existItem=state.cartItems.find(x=>x.id===item.id);
                 if(existItem){

@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import MainModal from "../components/main-modal/MainModal";
+import React from "react";
 import ProductList from "../components/product-list/ProductList";
-import Slider from "../components/slider/Slider";
 
 const Home = () => {
-    const [products, setproducts] = useState([])
   return (
     <>
       <div className="container">

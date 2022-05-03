@@ -2,7 +2,7 @@ import React from "react";
 import "./slider.scss";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import {Pagination } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";

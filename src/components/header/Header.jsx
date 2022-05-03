@@ -12,7 +12,6 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../../contexts/LanguageContext";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
 const pages = [
